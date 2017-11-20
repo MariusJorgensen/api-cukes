@@ -17,8 +17,3 @@ Scenario: Get request to httpstat.us/401 will respond with a 401
 Scenario: Get request to httpstat.us/500 will respond with a 500
   When I do a GET request to httpstat.us/500
   Then the response code will be 500
-
-Scenario: Get request to httpstat.us/403 will respond with a 403
-  When I do a GET request to httpstat.us/403
-  # force failing the following step
-  Then the response code will be 404
